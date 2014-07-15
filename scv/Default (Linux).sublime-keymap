@@ -1,0 +1,5 @@
+[
+	{
+		"keys": ["super+n"], "command": "advanced_new_file_new"
+	},
+]
