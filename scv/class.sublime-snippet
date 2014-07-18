@@ -1,12 +1,8 @@
 <snippet>
     <content><![CDATA[
-class ${1:ClassName}${2: extends ${3:AnotherClass}}
+class $1${2: extends $3}
 {
 	$4
-	${5:public} function ${6:__construct}($7)
-	{
-		$8
-	}
 }
 ]]></content>
     <tabTrigger>cc</tabTrigger>
