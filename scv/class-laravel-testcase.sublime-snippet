@@ -1,12 +1,12 @@
 <snippet>
     <content><![CDATA[
-class $1Test extends PHPUnit_Framework_TestCase {
+class $1Test extends TestCase {
 
 	$2
 	
 }
 ]]></content>
-    <tabTrigger>cp</tabTrigger>
+    <tabTrigger>ct</tabTrigger>
     <scope>source.php</scope>
     <description>class …</description>
 </snippet>

@@ -1,8 +1,9 @@
 <snippet>
     <content><![CDATA[
-class $1${2: extends $3}
-{
+class $1 ${2:extends $3 }{
+
 	$4
+
 }
 ]]></content>
     <tabTrigger>cc</tabTrigger>
