@@ -1,7 +1,7 @@
 # SCV
 Sublime Cool Version is a cool configuration for Sublime Text 3 and PHP developers. 
 
-## User preference
+## User preferences
     // Preferences.sublime-settings
     {
         "color_scheme": "Packages/Dayle Rees Color Schemes/sublime/peacock.tmTheme",
@@ -18,7 +18,7 @@ Sublime Cool Version is a cool configuration for Sublime Text 3 and PHP develope
         "translate_tabs_to_spaces": true
     }
 
-## Instaled Packages
+## Installed Packages
 + AdvancedNewFile
 + Dayle Rees Color Schemes
 + DocBlockr
