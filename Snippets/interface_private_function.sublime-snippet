@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[private function $1($2);]]></content>
+    <tabTrigger>iprif</tabTrigger>
+    <scope>source.php</scope>
+    <description>function …</description>
+</snippet>

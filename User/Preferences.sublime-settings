@@ -1,0 +1,14 @@
+{
+	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/peacock.tmTheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 6,
+	"line_padding_top": 6,
+	"rulers":
+	[
+		80
+	],
+	"translate_tabs_to_spaces": true
+}

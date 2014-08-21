@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[protected function $1($2);]]></content>
+    <tabTrigger>iprof</tabTrigger>
+    <scope>source.php</scope>
+    <description>function …</description>
+</snippet>

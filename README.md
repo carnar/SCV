@@ -1,82 +1,102 @@
 # SCV
-Sublime Cool Version is a cool configuration for Sublime Text 3 and PHP developers. 
+Sublime Cool Version are configurations for Sublime Text 3 and PHP developers, inspired in Laravel community.
 
-## User preferences
-    // Preferences.sublime-settings
-    {
-        "color_scheme": "Packages/Dayle Rees Color Schemes/sublime/peacock.tmTheme",
-        "ignored_packages":
-        [
-            "Vintage"
-        ],
-        "line_padding_bottom": 6,
-        "line_padding_top": 6,
-        "rulers":
-        [
-            80
-        ],
-        "translate_tabs_to_spaces": true
-    }
+## Installation
+1. Clone this repo into Sublime Text Packages directory. Preferences -> Browse Packages...
+2. Copy all files from SCV/User to Packages/User.
+3. Install the next packages.
 
-## Installed Packages
+### Packages
+Install with Package Control
+
++ SideBarEnhancements
++ DocBlockr
 + AdvancedNewFile
 + Dayle Rees Color Schemes
-+ DocBlockr
 + Markdown Preview
+
+Optional
 + PackageResourceViewer
 + PHP Getters and Setters
-+ SideBarEnhancements
 
-### DocBlockr User Preferences
+## Final Files Structure
+    Packages
+    ├── SCV
+    │   ├── Snippets
+    │   │   ├── class_extends.sublime-snippet
+    │   │   ├── class_implements.sublime-snippet
+    │   │   ├── class-laravel-testcase.sublime-snippet
+    │   │   ├── class-phpunit.sublime-snippet
+    │   │   ├── class.sublime-snippet
+    │   │   ├── interface_private_function.sublime-snippet
+    │   │   ├── interface_protected_function .sublime-snippet
+    │   │   ├── interface_public_function.sublime-snippet
+    │   │   ├── interface.sublime-snippet
+    │   │   ├── private_function.sublime-snippet
+    │   │   ├── protected_function.sublime-snippet
+    │   │   ├── public_function.sublime-snippet
+    │   │   └── trait.sublime-snippet
+    │   ├── User
+    │   │   ├── Base File.sublime-settings
+    │   │   └── Preferences.sublime-settings
+    │   ├── Default (Linux).sublime-keymap
+    │   ├── Default (Linux).sublime-mousemap
+    │   └── README.md
+    └── User
+        ├── Base File.sublime-settings
+        └── Preferences.sublime-settings
 
-    // Base File.sublime-settings
+
+## Sublime Text User preferences
+File
+
+    Preferences.sublime-settings
+
+Options
++ Theme like Laravel's website.
++ Line spacing like Taylor Otwell.
++ 80 characters rule
++ Translate tabs to spaces
+
+
+## DocBlockr User Preferences
+File
+
+    Base File.sublime-settings
+
+Generate documentation like this:
+
+    /**
+     * [sendSmsMessage description]
+     *
+     * @param  SmsCourierInterface $courier
+     * @param  [type] $message
+     * @return [type]
+     */
+    public function sendSmsMessage(SmsCourierInterface $courier, $message)
     {
-        // whether the words following the @tags should align.
-        // Possible values are 'no', 'shallow', 'deep'
-        // For backwards compatibility, false is equivalent to 'no', true is equivalent to 'shallow'
-        //
-        // 'shallow' will just align the first words after the tag. eg:
-        // @param    {MyCustomClass} myVariable desc1
-        // @return   {String} foo desc2
-        // @property {Number} blahblah desc3
-        //
-        // 'deep' will align each component of the tags, eg:
-        // @param    {MyCustomClass} myVariable desc1
-        // @return   {String}        foo        desc2
-        // @property {Number}        blahblah   desc3
-        "jsdocs_align_tags": "shallow",
+        $courier->sendMessage($this->phone_number, $message);
 
-        // Add a '[description]' placeholder for the return tag?
-        "jsdocs_return_description": false,
-
-        // Add a '[description]' placeholder for the param tag?
-        "jsdocs_param_description": false,
-
-        // Whether there should be blank lines added between the description line, and between tags of different types.
-        // Possible values are true, false, or "after_description".
-        // If true, the output might look like this:
-        //
-        // /**
-        //  * [description]
-        //  *
-        //  * @param  {String} foo
-        //  * @param  {Number} bar
-        //  *
-        //  * @return {[Type]}
-        //  */
-        //
-        // If "after_description" is configured, a blank line is only added between the description and the first tag, but not
-        // between different tag sections, so the output, in that case, might look like this:
-        //
-        // /**
-        //  * [description]
-        //  *
-        //  * @param  {String} foo
-        //  * @param  {Number} bar
-        //  * @return {[Type]}
-        //  */
-        "jsdocs_spacer_between_sections": "after_description",
-
-        // If set to true, primitives such as "Number" and "String" will be documented as "number" and "string".
-        "jsdocs_lower_case_primitives": false,
+        return $this->sms()->create([
+            'to' => $this->phone_number,
+            'message' => $message;
+        ]);     
     }
+
+## Snippets
+
+| Key binding | Description |
+|----------|------|
+| cc + tab | class |
+| ci + tab | class implements |
+| ce + tab | class extends |
+| ct + tab | class extends TestCase (Laravel) |
+| cp + tab | class extends PHPUnit_Framework_TestCase |
+| ii + tab | interface |
+| tt + tab | trait |
+| pubf + tab | public function |
+| prof + tab | protected function |
+| prif + tab | private function |
+| ipubf + tab | inline public function definition |
+| iprof + tab | inline protected function definition |
+| iprif + tab | inline private function definition |
