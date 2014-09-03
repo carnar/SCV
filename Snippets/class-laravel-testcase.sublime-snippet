@@ -2,7 +2,7 @@
     <content><![CDATA[
 class $1Test extends TestCase {
 
-	$2
+	$0
 	
 }
 ]]></content>

@@ -92,6 +92,7 @@ Generate documentation like this:
 | ce + tab | class extends |
 | ct + tab | class extends TestCase (Laravel) |
 | cp + tab | class extends PHPUnit_Framework_TestCase |
+| _c + tab | construct |
 | ii + tab | interface |
 | tt + tab | trait |
 | pubf + tab | public function |
