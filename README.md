@@ -23,19 +23,7 @@ Optional
     Packages
     ├── SCV
     │   ├── Snippets
-    │   │   ├── class_extends.sublime-snippet
-    │   │   ├── class_implements.sublime-snippet
-    │   │   ├── class-laravel-testcase.sublime-snippet
-    │   │   ├── class-phpunit.sublime-snippet
-    │   │   ├── class.sublime-snippet
-    │   │   ├── interface_private_function.sublime-snippet
-    │   │   ├── interface_protected_function .sublime-snippet
-    │   │   ├── interface_public_function.sublime-snippet
-    │   │   ├── interface.sublime-snippet
-    │   │   ├── private_function.sublime-snippet
-    │   │   ├── protected_function.sublime-snippet
-    │   │   ├── public_function.sublime-snippet
-    │   │   └── trait.sublime-snippet
+    │   │   ├── *.sublime-snippet
     │   ├── User
     │   │   ├── Base File.sublime-settings
     │   │   └── Preferences.sublime-settings
