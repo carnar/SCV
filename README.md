@@ -3,7 +3,7 @@ Sublime Cool Version are configurations for Sublime Text 3 and PHP developers, i
 
 ## Installation
 1. Clone this repo into Sublime Text Packages directory. Preferences -> Browse Packages...
-2. Copy all files from SCV/User to Packages/User.
+2. Copy all files from Packages/SCV/User to Packages/User.
 3. Install the next packages.
 
 ### Packages
@@ -89,3 +89,4 @@ Generate documentation like this:
 | ipubf + tab | inline public function definition |
 | iprof + tab | inline protected function definition |
 | iprif + tab | inline private function definition |
+| ctrl + shift + click | Go to class/method definition |
